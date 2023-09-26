@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="es.uam.eps.dadm.cards.StudyViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="@{viewModel.card == null ? View.INVISIBLE : View.VISIBLE}">
+
+        <TextView
+            android:id="@+id/question_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:text="@{viewModel.card.question}"
+            />
+
+        <TextView
+            android:id="@+id/answer_text_view"
+            android:layout_below="@id/separator_view"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:visibility="@{viewModel.card.answered ? View.VISIBLE : View.INVISIBLE}"
+            android:text="@{viewModel.card.answer}"/>
+
+        <Button
+            android:id="@+id/answer_button"
+            android:layout_below="@id/answer_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{viewModel.card.answered ? View.INVISIBLE : View.VISIBLE}"
+            android:text="@string/answer_button_text" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="@{viewModel.card.answered ? View.VISIBLE : View.INVISIBLE}"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/easy_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_light"
+                android:text="@string/easy_button_title"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Button
+                android:id="@+id/doubt_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:text="@string/doubt_button_title"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Button
+                android:id="@+id/difficult_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:text="@string/difficult_button_title"
+                style="?android:attr/buttonBarButtonStyle" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator_view"
+            android:layout_below="@id/question_text_view"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_height="1dp"
+            android:visibility="@{viewModel.card.answered ? View.VISIBLE : View.INVISIBLE}"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/info_text_view"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:text="@{@string/due_cards_format(viewModel.nDueCards)}"
+            tools:text="@string/info_text_view_message" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,129 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="card"
+            type="es.uam.eps.dadm.cards.Card" />
+        <import type="android.view.View"/>
+        <variable
+            name="deck"
+            type="es.uam.eps.dadm.cards.Deck" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:gravity="center"
+            android:text="@{card.date.substring(0,10)}"/>
+
+        <TextView
+            android:id="@+id/question_text_view_card_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question_card_edit"
+            android:textSize="30sp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/card_question_hint"
+            android:layout_marginHorizontal="50dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/question_edit_text"
+                android:text="@{card.question}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/answer_text_view_card_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/answer_card_edit"
+            android:textSize="30sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/card_answer_hint"
+            android:layout_marginHorizontal="50dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/answer_edit_text"
+                android:text="@{card.answer}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/deck_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:prompt="@string/select_deck" />
+
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/card_edit_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/cancel_card_edit_button"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/design_default_color_error"
+                android:text="@string/cancel_card_edit_button" />
+
+            <Button
+                android:id="@+id/accept_card_edit_button"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/teal_700"
+                android:text="@string/accept_card_edit_button" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <Button
+            android:id="@+id/details_card_edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="@{card.showDetails == true ? View.VISIBLE : View.INVISIBLE}"
+            android:text="@string/details_card_edit_button"
+            />
+
+        <Button
+            android:id="@+id/delete_card_edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="@{card.delete == false ? View.INVISIBLE : View.VISIBLE }"
+            android:text="@string/delete_edit_button"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="@{card.showDetails == false ? View.INVISIBLE : View.VISIBLE}"
+            android:text="@{card.details}"
+            />
+
+    </LinearLayout>
+
+</layout>

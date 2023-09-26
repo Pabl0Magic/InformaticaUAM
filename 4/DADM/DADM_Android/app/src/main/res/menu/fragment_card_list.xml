@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/settings"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="@string/settings_menu_title"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/log_out"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="@string/logout_menu_title"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/upload"
+        android:icon="@drawable/ic_baseline_upload_24"
+        android:title="@string/upload"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/download"
+        android:icon="@drawable/ic_baseline_download_24"
+        android:title="@string/download"
+        app:showAsAction="never" />
+
+</menu>

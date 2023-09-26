@@ -1,0 +1,30 @@
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:title="@string/deck_header">
+
+        <EditTextPreference
+            app:key="max_number_cards"
+            app:title="@string/max_number_cards"
+            app:defaultValue="20"
+            />
+        <SwitchPreferenceCompat
+            app:key="board"
+            app:title="@string/board_title"
+            app:summaryOff="@string/board_summary_off"
+            app:summaryOn="@string/board_summary_on"
+            />
+        <ListPreference
+            app:key="background_color"
+            app:title="Background color"
+            app:summary="Select the background color for the app"
+            app:entries="@array/color_names"
+            app:entryValues="@array/color_values"
+            app:defaultValue="white"
+            app:negativeButtonText="@null"
+            app:positiveButtonText="@null"
+            app:dialogTitle="Select color" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/cardListFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_view_list_24"
+        android:title="@string/cards_nav_menu_title"/>
+    <item
+        android:id="@id/studyFragment3"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_play_circle_filled_24"
+        android:title="@string/study_nav_menu_title"/>
+
+    <!--
+    <item
+        android:id="@id/statisticsFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_assessment_24"
+        android:title="@string/statistics_nav_menu_title"/>
+        -->
+    <item
+        android:id="@id/deckListFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_library_add_24"
+        android:title="@string/decks_nav_menu_title"
+        />
+
+    <item
+        android:id="@id/aboutFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="@string/about_title" />
+
+</menu>

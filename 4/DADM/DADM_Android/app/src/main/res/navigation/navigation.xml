@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="es.uam.eps.dadm.cards.TitleFragment"
+        android:label="TitleFragment"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_titleFragment_to_cardListFragment"
+            app:destination="@id/cardListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studyFragment3"
+        android:name="es.uam.eps.dadm.cards.StudyFragment"
+        android:label="StudyFragment"
+        tools:layout="@layout/fragment_study"/>
+    <fragment
+        android:id="@+id/cardListFragment"
+        android:name="es.uam.eps.dadm.cards.CardListFragment"
+        android:label="CardListFragment"
+        tools:layout="@layout/fragment_card_list">
+        <action
+            android:id="@+id/action_cardListFragment_to_studyFragment3"
+            app:destination="@id/studyFragment3" />
+        <action
+            android:id="@+id/action_cardListFragment_to_cardEditFragment"
+            app:destination="@id/cardEditFragment" />
+        <action
+            android:id="@+id/action_cardListFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_cardListFragment_to_deckListFragment"
+            app:destination="@id/deckListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardEditFragment"
+        android:name="es.uam.eps.dadm.cards.CardEditFragment"
+        android:label="CardEditFragment"
+        tools:layout="@layout/fragment_card_edit">
+        <action
+            android:id="@+id/action_cardEditFragment_to_cardListFragment"
+            app:destination="@id/cardListFragment"
+            app:popUpTo="@id/cardListFragment" />
+        <argument
+            android:name="cardId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_cardEditFragment_self"
+            app:destination="@id/cardEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="es.uam.eps.dadm.cards.AboutFragment"
+        android:label="AboutFragment"
+        tools:layout="@layout/fragment_about">
+        <action
+            android:id="@+id/action_aboutFragment_to_cardListFragment"
+            app:destination="@id/cardListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deckEditFragment"
+        android:name="es.uam.eps.dadm.cards.DeckEditFragment"
+        android:label="fragment_deck_edit"
+        tools:layout="@layout/fragment_deck_edit" >
+        <argument android:name="deckId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_deckEditFragment_to_deckListFragment"
+            app:destination="@id/deckListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deckListFragment"
+        android:name="es.uam.eps.dadm.cards.DeckListFragment"
+        android:label="DeckListFragment"
+        tools:layout="@layout/fragment_deck_list">
+        <action
+            android:id="@+id/action_deckListFragment_to_deckEditFragment"
+            app:destination="@id/deckEditFragment" />
+    </fragment>
+</navigation>

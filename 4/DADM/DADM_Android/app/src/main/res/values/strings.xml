@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cards</string>
+    <string name="answer_button_text">Check answer</string>
+
+    <string name="easy_button_title">Easy</string>
+    <string name="doubt_button_title">Doubt</string>
+    <string name="difficult_button_title">Hard</string>
+
+    <string name="info_text_view_message">Number of remaining cards</string>
+    <string name="due_cards_format">%d cards left</string>
+    <string name="subtitle_text">Tap to study</string>
+    <string name="question_card_edit">Question</string>
+    <string name="answer_card_edit">Answer</string>
+    <string name="accept_card_edit_button">Accept</string>
+    <string name="cancel_card_edit_button">Cancel</string>
+    <string name="card_question_hint">Write the question text</string>
+    <string name="card_answer_hint">Write the answer text</string>
+    <string name="study_nav_menu_title">Review cards</string>
+    <string name="decks_nav_menu_title">Decks</string>
+    <string name="about_title">About</string>
+    <string name="delete_edit_button">Delete</string>
+    <string name="new_add_fab_description">Add card or deck</string>
+    <string name="name_deck_edit">Deck name</string>
+    <string name="deck_name_hint">Write the deck name</string>
+    <string name="cards_nav_menu_title">Cards</string>
+    <string name="details_card_edit_button">Details</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="settings_menu_title">Settings</string>
+    <string name="logout_menu_title">Log out</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="deck_header">Deck</string>
+
+    <!-- Maximum number of cards Preferences -->
+    <string name="max_number_cards">Maximum number of cards</string>
+
+    <!-- Board Preferences -->
+    <string name="board_title">Show board</string>
+    <string name="board_summary_off">Board unavailable</string>
+    <string name="board_summary_on">Board available</string>
+    <string name="emailpassword_title_text">Email and password</string>
+    <string name="signed_out">Signed out</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create_account">Create account</string>
+    <string name="sign_out">Sign out</string>
+    <string name="verify_email">Verify email</string>
+    <string name="reload">Reload</string>
+    <string name="upload">Upload</string>
+    <string name="download">Download</string>
+    <string name="select_deck" translatable="false">Select deck</string>
+    <string name="last_deck_warning">If this there is only one deck and you delete it, the app will crush</string>
+
+</resources>

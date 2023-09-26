@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cards</string>
+    <string name="answer_button_text">Ver respuesta</string>
+    <string name="easy_button_title">Fácil</string>
+    <string name="doubt_button_title">Duda</string>
+    <string name="difficult_button_title">Difícil</string>
+    <string name="info_text_view_message">Numero de cartas restantes</string>
+    <string name="due_cards_format">%d cartas restantes</string>
+    <string name="subtitle_text">Toca para empezar</string>
+    <string name="question_card_edit">Pregunta</string>
+    <string name="answer_card_edit">Respuesta</string>
+    <string name="accept_card_edit_button">Aceptar</string>
+    <string name="cancel_card_edit_button">Cancelar</string>
+    <string name="card_question_hint">Escribe la pregunta</string>
+    <string name="card_answer_hint">Escribe la respuesta</string>
+    <string name="study_nav_menu_title">Revisar tarjetas</string>
+    <string name="decks_nav_menu_title">Mazos</string>
+    <string name="about_title">Acerca de</string>
+    <string name="delete_edit_button">Eliminar</string>
+    <string name="new_add_fab_description">Añadir tarjeta/mazo</string>
+    <string name="name_deck_edit">Nombre del mazo</string>
+    <string name="deck_name_hint">Escribe el nombre del mazo</string>
+    <string name="cards_nav_menu_title">Tarjetas</string>
+    <string name="details_card_edit_button">Detalles</string>
+    <string name="settings_menu_title">Ajustes</string>
+    <string name="logout_menu_title">Cerrar sesión</string>
+    <string name="title_activity_settings">Ajustes</string>
+    <string name="deck_header">Mazo</string>
+    <string name="max_number_cards">Número de cartas máximo</string>
+    <string name="board_title">Mostrar pizarra</string>
+    <string name="board_summary_off">Pizarra no disponible</string>
+    <string name="board_summary_on">Pizarra disponible</string>
+    <string name="reload">Recargar</string>
+    <string name="verify_email">Verificar email</string>
+    <string name="sign_out">Cerrar sesión</string>
+    <string name="create_account">Crear cuenta</string>
+    <string name="sign_in">Iniciar sesión</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_email">Email</string>
+    <string name="signed_out">Sesión cerrada</string>
+    <string name="emailpassword_title_text">Email y contraseña</string>
+    <string name="upload">Subir</string>
+    <string name="download">Descargar</string>
+    <string name="last_deck_warning">Si solo tienes un mazo y lo borras, la aplicación puede cerrarse abruptamente</string>
+</resources>

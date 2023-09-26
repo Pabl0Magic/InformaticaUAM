@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "312195563503",
+    "firebase_url": "https://pabloalmarzamarquescards-153e8-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "pabloalmarzamarquescards-153e8",
+    "storage_bucket": "pabloalmarzamarquescards-153e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312195563503:android:98b356c856b31a5c7d001a",
+        "android_client_info": {
+          "package_name": "es.uam.eps.dadm.cards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312195563503-qnrn60upion5lfvvos9aucb7nl33gdn6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi6bS_boJsUK9YkmgdMEPk8FpFiVtASqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "312195563503-qnrn60upion5lfvvos9aucb7nl33gdn6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
