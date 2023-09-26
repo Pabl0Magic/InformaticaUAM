@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}- VideoClub</title>
+    <!-- Uso de url_for para obtener la ruta de elementos de la página -->
+    <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='estilo.css') }}/>
+    <link rel="stylesheet" href="../static/estilo.css">
+</head>
+<body>
+
+    <!--- HEADER -->
+    <div class="hamb">
+        <span onclick="abrirMenu()">&#9776;</span>
+    </div>
+    <div class="header">
+        <h3>VideoClub:</h1>
+        <a href="{{ url_for('index') }}">Home</a>
+        {% if not session['usuario'] %}
+            <a href="{{ url_for('login') }}">Sign In</a>
+            <a href="{{ url_for('register') }}">Register</a>
+            <br>
+            <p>Usuario: Anonimo</p>
+        {% else %}
+            <a href="{{ url_for('logout') }}">Log out</a>
+            <br>
+            <p>Usuario: {{ session['usuario'] }}</p>
+        {% endif%}
+    </div>
+       
+
+    <div id="content">
+    <!--- CONTENT -->
+    {% block content%} {% endblock %}
+    </div>
+    <!--- MENU LATERAL-->
+    <nav id="menulateral" class="lateral">
+        <a href="javascript:void(0)" id="botoncerrar" class="botoncerrar" onclick="cerrarMenu()">&times;</a>
+        <a href="{{ url_for('buscar') }}">Search</a>
+        <br>
+        {% if not session['usuario'] %}
+            <a href="{{ url_for('login') }}">Sign In</a>
+            <br>
+            <a href="{{ url_for('register') }}">Register</a>
+            <br>
+            
+        {% else %}
+        <a href="{{ url_for('carrito') }}">Carrito</a>
+        <br>
+        <a href="{{ url_for('logout') }}">Log out</a>
+        {% endif %}            
+    </nav>
+
+    <script>
+        function abrirMenu() {
+            document.getElementById("menulateral").style.width = "200px";
+            document.getElementById("menulateral").style.visibility = "visible";
+            document.getElementById("botoncerrar").style.visibility = "visible";
+        }
+
+        function cerrarMenu() {
+            document.getElementById("menulateral").style.width = "0";
+            document.getElementById("menulateral").style.visibility = "hidden";
+            document.getElementById("botoncerrar").style.visibility = "hidden";
+        }
+    </script>
+
+    <!--- FOOTER -->
+    <footer>
+        <div class="footer">
+            <p>Authors: Pablo Almarza & Carlos Garcia</p>
+        </div>
+    </footer>
+
+</body>
+</html>

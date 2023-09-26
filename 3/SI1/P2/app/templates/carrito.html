@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Carrito</h2>
+<script src={{url_for('static', filename='script.js')}}></script>
+<div class="container">
+    {% if not films %}
+        <p> Ningun articulo en el carrito</p>
+        <p> Compra articulos <a href="{{ url_for('buscar') }}">aqui</a></p> 
+    {% else %}
+        <ul>
+        {% for item in films %}
+            <li><strong>{{ films[item]['data']['titulo'] }}</strong></li>
+            <p>Precio: {{ films[item]['cant'] }}</p>
+            
+        {% endfor %}
+        </ul>
+        <p>Coste Total: {{ costetotal }} </p>
+
+
+        <div>
+            <form id="elcarro" action="{{ url_for('carrito') }}" method="POST">
+                <hr>
+                <button name="removeall" type="submit" id="removeall" value="removeall">Remove all</button>
+                <button name="elcarro" type="submit" id="comprar" value="comprar">Comprar</button> 
+                </hr>
+            </form>
+        </div>
+    {% endif %}
+</div>
+   
+{% endblock %}

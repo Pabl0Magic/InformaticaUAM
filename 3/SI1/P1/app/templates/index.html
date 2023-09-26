@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock%}
+
+{% block content %}
+    <h2>Página principal</h2>
+    <ul id="myUl">
+    {% for item in movies %}
+    <li><a href="/details?id_pelicula={{ item.id }}">{{ item.titulo }}</a></li>
+    {% endfor %}
+    </ul>
+    {{notif}}
+{% endblock %}

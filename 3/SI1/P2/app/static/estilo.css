@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(245, 250, 246);
+    width: 100%;
+    min-height:100%;
+}
+
+
+.hamb{
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.header {
+    position: relative;
+    text-align: left;
+    font-size: large;
+    margin-top: 15px;
+    margin-left: 35px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(17, 22, 51);
+    color: white;
+    text-align: left;
+ }
+
+.lateral {
+    height:100%;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color:white;
+    background-color:  rgb(17, 22, 51);
+    transition: 0.5s;
+    visibility: hidden;
+    position: fixed;
+}
+
+.lateral .botoncerrar {
+    top: 0;
+    right: 100px;
+    font-size: 30px;
+    margin-left: 175px;
+    transition: 0.5s;
+    visibility: hidden;
+}

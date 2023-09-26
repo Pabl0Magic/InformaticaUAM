@@ -1,0 +1,56 @@
+{% extends "base.html" %} 
+
+{% block title %}
+    {{ title }}
+{% endblock%}
+
+
+{% block content %}
+<script src={{url_for('static', filename='script.js')}}></script>
+<div class="container" >
+    <h2>Registrarse</h2>
+    <p>Rellena todos los campos</p>
+    <form action="{{ url_for('register') }}" name="register" method="post" onsubmit="return validarUsuario()">
+        <hr>
+        <!--Nombre: Al menos 5 caracteres, sin espacios ni caracteres especiales-->
+        <label for="name"> <b>Nombre</b></label>
+        <input name="username" type="text" placeholder="Nombre de usuario" id="username" minlength="5" required>
+        <span id="error_username"></span>
+        
+        <!--Email: hola@gg.es-->
+        <label for="email"><b>Email</b></label>
+        <input name="email" type="text" placeholder="Correo electronico" id="email" required>
+        <span id="error_email"></span>
+
+        <!--Password: Al menos 6 caracteres-->
+        <label for="pass"><b>Contraseña</b></label>
+        <input name="pass" type="password" placeholder="Contraseña" id="pass" minlength="6" required>
+        <span id="error_password"></span>
+
+        <!--Confirmar password-->
+        <label for="checkpass"><b>Confirmar contraseña</b></label>
+        <input name="checkpass" type="password" placeholder="Confirmar contraseña" id="checkpass" onkeyup=validarPassword() required>
+        <span id="error_checkpassword"></span>
+
+        <!--Tarjeta de credito: 16 digitos-->
+        <label for="tarjeta"><b>Tarjeta de credito</b></label>
+        <input name="tarjeta" type="text" placeholder="Numero de tarjeta" id="tarjeta" minlength="16" maxlength="16" required>
+        <span id="error_tarjeta"></span>
+
+        <!--Direccion: Hasta 50 caracteres-->
+        <label for="direccion"><b>Direccion</b></label>
+        <input name="direccion" type="text" placeholder="Direccion" id="direccion" maxlength="50" >
+        <span id="error_direccion"></span>
+
+        <hr>
+
+        <div>
+            <button type="submit">Registrarse</button>
+        </div>
+    </form>
+    {%if notif%}
+        <p>{{   notif}}</p>
+    {%endif%}
+</div>
+
+{% endblock %}

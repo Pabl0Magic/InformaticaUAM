@@ -1,0 +1,36 @@
+{ "peliculas": 
+  [ 
+    { 
+			"id": 1,
+			"titulo": "La guerra de las galaxias: Episodio 1-La amenaza fantasma",
+      "poster": "imagenes/guerraepisodio1.jpg",
+      "director": "George Lucas",
+      "precio": 18.99,
+      "categoria": "Aventura",
+      "año": 1999,
+      "actores": 
+      [
+        { "nombre": "Jake Lloyd",
+          "personaje": "Anakin Skywalker",
+          "foto": "imagenes/anakin.jpg"
+        }
+      ]
+    },
+    { 
+			"id": 2,
+			"titulo": "Mama mia",
+      "poster": "imagenes/guerraepisodio1.jpg",
+      "director": "George Lucas",
+      "precio": 5.50,
+      "categoria": "Aventura",
+      "año": 1999,
+      "actores": 
+      [
+        { "nombre": "Jake Lloyd",
+          "personaje": "Anakin Skywalker",
+          "foto": "imagenes/anakin.jpg"
+        }
+      ]
+    }
+  ]
+}

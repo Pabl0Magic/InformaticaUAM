@@ -1,0 +1,20 @@
+{% extends "base.html" %} 
+
+{% block content %}
+<h2>Búsqueda</h2>
+<div id="filters_id">
+    <form action="{{ url_for('index')}}" id="search" method="post">    
+        <div>
+            Categoria:
+            <select id="cat" type="select" name="Categoria" placeholder="Categoria" >
+                <option value="Sin definir">Sin definir</option>
+                <option value="Accion">Accion</option>
+                <option value="Aventura">Aventura</option>
+                <option value="Comedia">Comedia</option>
+                </select>
+        </div>
+        <input id="searchbar" type="text" name="filter" placeholder="Buscar">
+        <button type="submit"> Buscar </button> 
+    </form>
+</div>
+{% endblock %}
