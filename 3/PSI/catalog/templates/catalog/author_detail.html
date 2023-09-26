@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Author: {{ author.last_name }}, {{ author.first_name }}</h1>
+
+  <div style="margin-left:20px;margin-top:20px">
+    <h4>Books</h4>
+
+    {% for copy in author.book_set.all %}
+      <p><a href="{{ copy.get_absolute_url }}"><strong>{{ copy.title }}</strong></a></p>
+      <p>{{ copy.summary }}</p>
+    {% endfor %}
+  </div>
+
+{% endblock %}
