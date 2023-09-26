@@ -1,0 +1,5 @@
+1245 HYN;Speeding;2
+5643 KOI;Improper parking;1
+0987 ETG;Driving in the opposite direction;12
+1245 HYN;Forbidden overtaking;2
+0987 ETG;Improper parking;1

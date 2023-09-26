@@ -1,0 +1,46 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>290</x><y>170</y><w>210</w><h>200</h></coordinates><panel_attributes>Questionnaire
+--
+String text
+int minutes
+Question initialQuestion
+Date startQuestionnaire
+Date endQuestionnaire
+double completitionTime
+--
++questionTypes()
++questionnaireTime(): double
++estimatedCompletitionTime(): double
++averageDeviation(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>170</y><w>210</w><h>130</h></coordinates><panel_attributes>Question
+--
+String text
+Date startQuestion
+Date endQuestion
+--
++questionTime(): Date</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>460</y><w>210</w><h>70</h></coordinates><panel_attributes>OpenEnded
+--
+String maxAnswerChar[128]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>750</x><y>730</y><w>210</w><h>70</h></coordinates><panel_attributes>SingleChoice
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1020</x><y>730</y><w>210</w><h>70</h></coordinates><panel_attributes>MultipleChoice
+--
+Boolean noOption</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1060</x><y>580</y><w>90</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60;70;60;70;150</additional_attributes></element><element><id>Relation</id><coordinates><x>840</x><y>580</y><w>100</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;80;60;10;60;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>290</y><w>170</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;10;150;70;10;70;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>200</y><w>200</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2= 1...*</panel_attributes><additional_attributes>10;10;180;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>890</x><y>460</y><w>230</w><h>130</h></coordinates><panel_attributes>/ChoiceBased/
+--
+Boolean orderedQuestions
+Question nextQuestion[]
+Option options[]
+
+--
++nextQuestion(Option answer): Question
++selectAnswer(Option answer)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>799</x><y>290</y><w>210</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70;190;70;190;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1240</x><y>460</y><w>210</w><h>70</h></coordinates><panel_attributes>Option
+--
+String text</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1110</x><y>480</y><w>150</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=2...*</panel_attributes><additional_attributes>130;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>0</y><w>210</w><h>70</h></coordinates><panel_attributes>System
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>440</y><w>210</w><h>70</h></coordinates><panel_attributes>User
+--
+String name</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>60</y><w>50</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2= 1...*</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>197</x><y>360</y><w>220</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;120;200;120;200;10</additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>200</y><w>220</w><h>280</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..*</panel_attributes><additional_attributes>10;10;200;10;200;260</additional_attributes></element><element><id>Relation</id><coordinates><x>639</x><y>297</y><w>150</w><h>220</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1</panel_attributes><additional_attributes>110;10;110;200;10;200</additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>20</y><w>220</w><h>440</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2= 0...*</panel_attributes><additional_attributes>200;10;10;10;10;420</additional_attributes></element></diagram>
