@@ -1,0 +1,7 @@
+main
+{
+    array int[100] vector1;
+
+	printf 1;
+
+}
