@@ -1,0 +1,26 @@
+<!--index.html-->
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <script src="https://unpkg.com/vue@3.2/dist/vue.global.prod.js"> </script>
+
+        <title>Basic application with Vue</title>
+        </head>
+    
+        <body>
+            <div id="app"> {{ greeting }}</div>
+
+            <script>
+            const app = Vue.createApp({
+                data() {
+                    return {
+                        greeting: 'Hello world'
+                    }
+                },
+            });
+
+            app.mount('#app');
+            </script>
+        </body>
+
+    </html>
