@@ -1,0 +1,10 @@
+Number trials 100000	 Execution time 0.08616700
+Number trials 200000	 Execution time 0.13164701
+Number trials 300000	 Execution time 0.18729900
+Number trials 400000	 Execution time 0.24223100
+Number trials 500000	 Execution time 0.30003500
+Number trials 600000	 Execution time 0.36254200
+Number trials 700000	 Execution time 0.41539800
+Number trials 800000	 Execution time 0.47987401
+Number trials 900000	 Execution time 0.53481102
+Number trials 1000000	 Execution time 0.59541500

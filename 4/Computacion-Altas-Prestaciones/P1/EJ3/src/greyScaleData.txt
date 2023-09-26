@@ -1,0 +1,15 @@
+[info] Processing ../images/4k.jpg
+[info] ../images/4k: width=3840, height=2160, nchannels=3
+Tiempo: 0.174644
+[info] Processing ../images/8k.jpg
+[info] ../images/8k: width=7680, height=4320, nchannels=3
+Tiempo: 1.146715
+[info] Processing ../images/FHD.jpg
+[info] ../images/FHD: width=1920, height=1080, nchannels=3
+Tiempo: 0.035026
+[info] Processing ../images/HD.jpg
+[info] ../images/HD: width=1280, height=720, nchannels=3
+Tiempo: 0.016218
+[info] Processing ../images/SD.jpg
+[info] ../images/SD: width=640, height=360, nchannels=3
+Tiempo: 0.004010
