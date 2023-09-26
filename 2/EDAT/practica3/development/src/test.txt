@@ -1,0 +1,6 @@
+INT, STR, INT
+1, Hello world, 10
+2, Hello world, 11
+3, Hello world, 11
+4, Hello world, 11
+5, Hello world, 11

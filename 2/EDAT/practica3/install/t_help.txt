@@ -1,0 +1,44 @@
+    This program accepts the following commands:
+    
+    read <file>
+    Reads a text file and keeps its contents in memory
+    
+    tmake <file>
+    Stores the contents of the text file currently in memory in a table using
+    the table.c functions,
+    the table is stored in the given file. The table is kept open in memory.
+    
+    tclose
+    Closes the table that is currently kept open 
+    
+    topen <file>
+    Opens the given table file and keeps it open in memory
+    
+    check 
+    Checks the contents of the current text file with those of the table
+    currently open in memory. 
+    
+    tshow <n>
+    Shows the contents of the nth record of the table and of the nth record
+    of the text file currently in memory (if they are loaded in memory). 
+    
+    verify <file>
+    Complete verification step: loads the text <file>, stores it as a table
+    in <file>.dat, closes the table, opens it again, and checks the 
+    correspondence of all the records.
+    
+    mkindex <file>
+    Creates an empty index in the given file.
+    
+    iinsert <key> <pos>
+    Inserts the pair <key> <pos> in the index currently in memory.
+    
+    ifind <key>
+    Finds the key <key> and displays the position(s) associated.
+    
+    tindex <file> <col>
+    Creates an index in the file <file> for the column <col> of the 
+    table currently in memory, and stores all the record in the index
+    
+    retrieve <key>
+    Retrieves and prints the contents of the key <key>.

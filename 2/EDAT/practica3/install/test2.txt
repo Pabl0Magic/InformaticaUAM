@@ -1,0 +1,6 @@
+INT, STR, INT, DBL, LLNG
+1, Hello world, 10, 2.51, 91847
+2, Hello world, 11, 2.51, 91847
+3, Hello world, 11, 2.51, 91847
+4, Hello world, 11, 2.51, 91847
+5, Hello world, 11, 2.51, -9223372036854775806
