@@ -1,0 +1,4 @@
+Execution time: 10.804795
+Execution time: 5.883614
+Execution time: 3.973516
+Execution time: 4.055701
