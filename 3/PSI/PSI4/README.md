@@ -1,0 +1,7 @@
+# PSI4
+Vue.js project Assignment 4
+
+# Instructions to play:
+In order to play you must insert an alias and a game number that will be the one shown in the django project previously done. Once you insert the values if the game exists, and the alias hasn't been used already you will be redirected to a page waiting for the game to start. Meanwhile the page in django with the participants from which the game will start is going to be updated automatically. Once in the django project the "Get Started" button has been pressed, the game will start and the 4 possible answers will be shown for you to click the one you think is correct. In case that the question contains less than 4 answers it will let you know that there is a problem, so you must choose a different answer. Once the time to answer is over you won't be able to click and once you have clicked you won't be able to click again. Meanwhile in the django project, the leaderboard with the scores is going to be updated automatically and when the game is over it will show the final scores and it will go back to the home page. The participant will be left in the page with the 4 bottoms to choose from.
+
+PD: The populate is done so the answers are randomly chosen for a question.
