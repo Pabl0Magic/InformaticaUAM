@@ -1,0 +1,39 @@
+space: id | name | link id north | link id east | link id south | link id west | link up | link down | illuminated BOOL | description | detailed description (inspect) | draw (7x3) &
+
+#s:9 |Lift|                     -1|-1|9|-1|-1|8|1|Lift|Welcome to the second floor. Here things are more difficult and you will have to be very intelligent. Here you have a key that gets you to next space.| 
+#s:10|Scientists rooms|         9|40|10|-1|-1|-1|0|Scientists room|Here is your first selection, you can pick either a gun or a sword, think  carefully your choose.|
+#s:11|Corridor|                 10|-1|11|-1|-1|-1|1|Corridor|If you are able to read this, then you know that the sword is magic and have the property to turn on itself. So use it again to advance.|
+#s:12|Corridor|                 11|-1|12|-1|-1|-1|0|Corridor|You cannot go to the next space with the sword because you have broken in by opening two links.|
+#s:13|Hall|                     12|41|13|-1|-1|-1|1|Hall|Sword is not allowed anymore since here. (inventar algo guapo), also the portal will be needed.| 
+#s:14|Secret exit|              13|-1|14|40|-1|-1|1|Secret exit|What path have you chosen?|
+#s:15|Experiments room|         14|-1|15|41|-1|-1|1|Experiments room|Oh, I expect you to have the portal to go to the next space. Also Tport.| 
+#s:16|Lift|                     15|-1|-1|-1|16|-1|0|Lift|Finally, you have reachen the last space from this level, good luck in the final level. Use now the teleport and move up.|
+#s:17|Lift|                     -1|43|17|-1|-1|16|1|Lift|Welcome to the las floor, here is the most difficult level from this game, you are playing like an expert, we expect that you finish perfect... We are seeing you. Oh! This door could be melt with something|
+
+link: id | name | space1 | space2 | open BOOL
+
+#l:9 |f2_D|         9|10|0
+#l:10|window|       10|11|0
+#l:11|room_D|       11|12|0   
+#l:12|screen|       12|13|0
+#l:13|wall|         13|14|0
+#l:14|rocks|        14|15|1
+#l:15|liquid|       15|16|0
+#l:16|door|         16|17|0
+#l:17|door|         17|18|0
+#l:40|door|         10|14|0
+#l:41|scrt_D|       13|15|0
+
+
+object : id | name | space id | illuminate BOOL | movable BOOL | turned on BOOL | hidden | cantmove | description | alternative description | illuminated description
+
+#o:10|key|      9|0|1|0|1|-1|the key has some slots in the sides, you can discern some pins that are very dirty|now the slots in the sides glow with a green light and the pins are more clean as they were used in the door|you cannot light this object this means that you've done cheats CHEATER!!!|9
+#o:11|stick|    10|0|1|0|1|-1|it's made of some sort of alloy, it's rusty but quite strong, maybe you can use it to smash and open stuff...|the rust has fallen off and now it's a little bent|you cannot light this object|40|
+#o:12|sword|    10|1|1|1|1|13|A simple sword, or could it have special abilities?|If you know the secret of the sword, don't tell anyone|Admire how beatiful is the sword|10|11
+#o:13|flower|   12|0|1|0|1|-1|the flower has some weird colors it may have experienced some genetic experiments|now the flower is moving, she  moves and resists to leave it's original space but you kill her|CHEATER!!!|41|
+#o:14|apple|    12|0|1|0|1|-1|This apple seems to have magic properties|Be careful! It could explode|If you see this, you are a cheater|12
+#o:15|portal|   13|1|1|1|1|-1|This is a gun that creates portals between to spots|Have you already discovered how the portal gun works?|Wow! It has weird colours|15|
+#o:16|tport|    14|1|1|1|1|-1|you should use this to go to the next floor of the building|now that you've gone to a new different level!|you can use it as a lantern too!|16|42|
+
+
+

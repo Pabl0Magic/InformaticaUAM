@@ -1,0 +1,115 @@
+i s
+i pass
+p pass
+o auto_D w pass
+m w
+i s
+p LED
+ton LED
+i s
+i key1
+p key1
+m e
+m s
+m s
+i body
+o tlab_D w key1
+m w
+i s
+p crwbar
+m n
+i s
+so tool
+p tool
+m s
+m e
+m e
+i s
+d LED
+o liftP1 w tool
+m u
+i s
+i key2
+o f2_D w key2
+m s
+i stick
+p sword
+ton sword
+i s
+o window w sword
+m s
+o room_D w sword
+m s
+i s
+i apple
+i flower
+p apple
+p flower
+o screen w apple
+i s
+d sword
+m s
+i s
+i portal
+p portal
+o scrt_D w flower
+m e
+m n
+p tport
+m s
+o liquid w portal
+m s
+ton portal
+i s
+o door w tport
+m u
+m d
+m u
+i s
+m s
+i s
+so spear
+p spear
+o chill w spear
+m s
+i s
+so hammer
+p hammer
+o doub_D w hammer
+ton hammer
+m s
+p meat
+m s
+m s
+i s
+d meat
+m s
+i s
+so acid
+p acid
+m s
+i s
+m n
+m n
+s prueba
+m n
+m n
+m n
+load prueba
+m n
+m n
+m n
+m n
+o out w acid
+m e
+i s
+exit
+
+
+
+
+
+
+
+
+

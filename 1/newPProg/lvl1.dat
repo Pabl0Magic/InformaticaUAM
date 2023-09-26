@@ -1,0 +1,36 @@
+space: id | name | link id north | link id east | link id south | link id west | illuminated BOOL | description | detailed description (inspect) | draw (7x3) &
+
+#s:1|Genetics lab|              -1|-1| 2| 1|-1|-1| 1|Genetics laboratory|You can see stretchers all over the lab. Most of them are empty but one of them has a pale elder man facing up. The one you woke up from is completely wet because of the sweat you produced. All the laboratory is messy with lots of materials all over the flor. To the east there is a closed metalic door with a little panel to the right of it with a gap for a card. To the south there is heavy ajar door.| &     
+#s:2|Cleaning room|             -1| 1|-1|-1|-1|-1| 0|Cleaning room|There are brushes and mops piled up in one of the corners of the room. To the left when you enter the room there is a shelving mostly full with cleanning products. When you look up you can see a lonely light bulb hanging from a bare wire. To the east you have got the entrance to the genetics lab.| & 
+#s:3|Hall (north)|               2| 3| 4|-1|-1|-1| 0|Hall (north)|You are walking through a completely white without any decoration and which continues south. To the east there's like a window  made of not a very high quality glass. Through it with the LED you can barely see there's a very big painting covering almost all the east wall, a bust in the middle of the room  and the floor messy with lots of papers.| &
+#s:4|Exposition|                -1|-1|-1| 3|-1|-1| 0|Exposition|It's a little room with a giant painting in the back and a bust in the middle of the room. The man appearing in the painting and in the bust seems the same. All over the floor there are papers and papers.| &
+#s:5|Hall (south)|               4| 7|-1| 5|-1|-1| 0|Hall (south)|You are walking through a completely white without any decoration and which continues north. To the east there's an openned lift. To the west there's a door with the label: "Testing laboratory".| &
+#s:6|Test laboratory (south)|    6| 5|-1|-1|-1|-1| 0|Test laboratory (south)|Looks like everyone just left running! The laboratory is not as messy as the genetics lab but there are full, half full and empty flasks over the tables. The room continues north where there's something different to the rest of the laboratory... To the east you can find the door to go back to the hall.| &
+#s:7|Test laboratory (north)|   -1|-1| 6|-1|-1|-1| 0|Test laboratory (north)|Looks like everyone just left running! The laboratory is not as messy as the genetics lab but there are full, half full and empty flasks over the tables. To the north-east of the room there's an enormous tube with the entrance semi-openned and a disgusting smell coming out of it. Moreover you can see many shelves (apparently to keep all the laboratory materials). The room continues to the south.| &
+#s:8|Lift (PB)|                 -1|-1|-1| 7| 8|-1| 0|Lift (PB)|The lift is without energy. However, right below the button pannel there is an empty space to put a battery. But you will need a tool to make the lift work.| & 
+
+
+link: id | name | space1 | space2 | open BOOL￼
+
+#l:1|auto_D|    1|2|0
+#l:2|glab_D|    1|3|1
+#l:3|glass|     3|4|0
+#l:4|hall|      3|5|1
+#l:5|tlab_D|    6|5|0
+#l:6|tlab|      6|7|1
+#l:7|lift_D|    5|8|1
+#l:8|liftP1|    8|9|0
+
+
+
+object : id | name | space id | illuminate BOOL | movable BOOL | turned on BOOL | visible | cantmove | description | alternative description | illuminated description | links|to|open|
+
+#o:1|pass|  1|0|1|0|1|-1|A magnetic card with a photo with a blonde guy called Miguel O'Hara, member of the investigation team of CLON.CORP.|A magnetic card with a photo with a blonde guy called Miguel O'Hara, member of the investigation team of CLON.CORP.|A magnetic card with a photo with a blonde guy called Miguel O'Hara, member of the investigation team of CLON.CORP.|A magnetic card with a photo with a blonde guy called Miguel O'Hara, member of the investigation team of CLON.CORP.| |1|
+#o:2|LED|   2|1|1|0|1| 9|A flashlight with a LED light. It has a battery next to it which can be put in the LED by picking it up.|A flashlight with a LED light wich has a removable battery. The battery can be obtained dropping the LED.|A bright flashlight with a LED warm-light. It has a removable battery which can be obtained by dropping the LED.|
+#o:3|note|  4|0|0|0|1|-1|A little paper with a note written in it: "Still the testing laboratory boss doesn't let me know very well what are we doing. We just finished building an enormous tube where 2 or 3 people can fit in. We left the TOOL kept in one of the shelves of the testing laboratory. I have a bad feeling about this..."| | |
+#o:4|paint| 4|0|0|0|1|-1|An insanely big painting of a portly man with a steady look at the front. It seems like he is the one who rules here. The frame is golden with lots ofornamentation. In the bottom-right corner of the painting you can see the illegible sign of the author.| | |
+#o:5|bust|  4|0|0|0|1|-1|A bust perfectly carved in marble of firm man with a penetrating look. Right below the bust, in the upper part of the pilar which supports the bust, there's a nameplate: "Doug Rattmann (Director of CLON CORP)"| | |
+#o:6|crwbar|6|0|1|0|1|-1|A crowbar made of stainless steel with a rubber grip. It has a blood stain on its top. It seem pretty heavy and strong to break anything or anyone.|A crowbar made of stainless steel with a rubber grip. It has a blood stain on its top. It seem pretty heavy and strong to break anything or anyone.| |
+#o:7|tool|  7|0|1|0|0|-1|A tool which can open any cover or close it. I think this is the tool the note talked about because I founded it behind the mysterious tube.|A tool which can open any cover or close it. I think this is the tool the note talked about because I founded it behind the mysterious tube.| |
+#o:8|body|  5|0|0|0|1|-1|A deedless body layed down at the end of the hall. It's a guy wearing a security staff uniform. Looking at him is not pleasing, his head is completely torn and the blood goes down his body. The blood is still liquid which means that it didn't happen too long ago.| | |
+#o:9|key|   2|0|1|0|1|-1|A large key in a key-ring which also has a label: "Key of the testing laboratory".|A large key in a key-ring which also has a label: "Key of the testing laboratory".| |5|

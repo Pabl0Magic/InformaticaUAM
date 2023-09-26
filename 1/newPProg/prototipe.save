@@ -1,0 +1,9 @@
+things for sure change: lightning areas, close open liks, change links of a space, hide or relocate an object,
+
+
+several objects #o: id|firstloc|visibity(hidden=0)|visibility|iluminate_space|turned_on|movable|moved|
+
+player saved #p: id|space|array_ids1|array_ids2...
+
+several spaces: #s: id|links|||iluminated
+#g: last_cmd|ok|last_roll

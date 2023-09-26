@@ -1,0 +1,43 @@
+space: id | name | link id north | link id east | link id south | link id west | illuminated BOOL | description | detailed description (inspect) | draw (7x3) &
+
+                
+#s:18|Living room|            -1|44|18|-1|-1|-1|1|Living room|Now, and again, you will need to choose a path, and be patient, we recommned you to inspect all spaces, if you don't,  then you won't be able to go through this level and that would be very very dissapointing... Also, if you know what WWE is, you will be able to pick Edge's finisher.| 
+#s:19|Meeting room|            18|-1|19|-1|-1|-1|1|Meeting|You know what? We are Marvel fans also, and Endgame was so good (keep calm, we won't do spoilers) and there was a character that all of us liked in it, he lost something here, will you know what it is?|
+#s:20|Corridor|                19|-1|20|-1|-1|-1|1|Corridor|Be careful, if you are in silence, you will able to hear some fury scream in the nex room. Also here you have some food, but we strongly recommend you to not eat it|
+#s:21|Hall|                    20|-1|21|-1|-1|-1|0|Hall|Oh my God! One of our experiments is still there! It is a massive rat that can eat you easily. Use something to get to the next room before it ends your life.|
+#s:22|Experiments room|        21|45|22|44|-1|-1|0|Experiments room|Another experiments room, could be here where the rat grown up, may be with some liquid that could be dangerous to people if you know chemistry, you should know what H2SO4 is|
+#s:23|Secret room|             22|46|-1|-1|-1|-1|1|Secret room|A really EasyWin lies here, if you are crafty enough, you will get a sweet victory, if not, you will have to inspect all this floor for having the answer.|
+#s:24|Emergency room|          -1|-1|-1|45|-1|-1|1|Emergency room|Noooo! You are stacked in this room, it was an emergency room in case that an experiment scaped so we could be here until we were able to go outside.|
+#s:25|Outside|                 -1|-1|-1|-1|-1|-1|1|Outside|tururututututuruuuuuuuuuuuu(Sing as Mario song finish). Nice job, you could scape from our labs, we are waiting you to join us in our programming/experiments group. Thanks for playing!|
+
+
+
+
+
+
+
+link: id | name | space1 | space2 | open BOOL
+
+#l:18|chill|        18|19|0
+#l:19|doub_D|       19|20|0
+#l:20|wood|         20|21|1
+#l:21|metalD|       21|22|1
+#l:22|exp_D|        22|23|1      
+#l:43|out|          17|25|0
+#l:44|glass|        18|22|1
+#l:45|smallD|       22|24|0
+#l:46|secret|       23|25|0
+
+
+
+
+
+object : id | name | space id | illuminate BOOL | movable BOOL | turned on BOOL | hidden | cantmove | description | alternative description | illuminated description
+
+
+
+#o:17|spear|        18|1|1|1|0|-1|It is a dazzling spear, because it is from the future!|The spear run out of battery|See how luminous the spear is!|
+#o:18|hammer|       19|1|1|1|0|-1|THIS IS THOR'S HAMMER|It is heavy weight but you are worthy|You have invoke the thunder!|
+#o:19|meat|         20|0|1|0|1|22|A big steak|Use the steak as early as you can|If you see this, you are a cheater|
+#o:20|acid|         22|0|1|0|0|-1|Be careful with your hands!|Take care of it, its your key to win|If you see this, you are a cheater|
+#o:21|easyW|        23|0|1|0|0|-1|If you get this you are master of this game, and very very clever.|You did it in the easy way, nice done!|If you see this, you are a cheater
