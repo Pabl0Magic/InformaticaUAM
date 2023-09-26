@@ -1,0 +1,31 @@
+1.
+Primero se abrió Wireshark mediante el comando sudo wireshark-gtk.
+A continuación, se capturó el tráfico de red de la interfaz ens-33.
+Después se ejecutó el comando de linux pedido.
+Se guardó la captura, se cerró Wireshark y se volvió a abrir y a crear las columnas "PO" y "PD".
+Se ordenó de forma descendente hasta el número 53.
+En total hay 7 paquetes antes del número 53.
+No se encontró ningún problema.
+
+2.
+	2.1
+	ip and frame.len > 1000.
+	
+	2.2
+	Crearía el filtro oportuno y guardaría la captura que se realizara teniendo activo "Update list of packages in real time".
+	
+	2.3
+	La longitud de los paquetes es la misma(1514).
+
+3.
+En el menú "Edit", se ha añadido una columna llamada interarrival y se ha ido cambiando de tipo de tiempo hasta acertar con Delta time.
+
+4.
+En el menú "View", se ha especificado en "Time Display format" el tiempo Epoch.
+
+5.
+
+Se pone en el filtro udp, teniendo activado "Update list of packages in real time".
+Se comprueba que antes y despues de la ejecución del comando de Linux sigue recibiendo solo paquetes UDP.
+
+	

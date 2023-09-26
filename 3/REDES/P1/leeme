@@ -1,0 +1,14 @@
+
+-->	Normativa de entrega cumplida en su totalidad: Realizado: Se ha leido el enunciado y analizado las funciones con detenimiento.
+        
+-->	Contar paquetes de una traza: Realizado: Se ha comparado el número de paquete de la terminal con el de Wireshark y son el mismo.
+
+-->   Contar paquetes de la interfaz de red: Realizado: En la terminal aparece el número de paquetes que se especifica (en el programa original es 50).
+
+-->   Almacenar en una traza el tráfico capturado en vivo: Parcialmente-Realizado: Conseguimos el tráfico y lo almacenamos en pdumper pero no conseguimos que no se inicialice a None cada vez que captura un paquete.
+
+-->   Modificar fecha correctamente: No-Realizado.
+
+-->   Imprimir los N primeros bytes de un paquete y validarlo con Wireshark (captura de pantalla): Realizado: Se ha comprobado mediante comparación en wireshark que los bytes coinciden con nbytes = 20.
+
+-->   Cuestionario "Ejercicios de captura de tráfico": Realizado. Se ha contestado a las 5 cuestiones del manual de Wireshark.
