@@ -1,0 +1,24 @@
+main
+{
+    boolean a;
+
+	a = true;
+	if (a) 
+	{
+	  printf 1;
+	}
+	else
+	{
+	  printf 0;
+	}
+	a = false;
+	if (a) 
+	{
+	  printf 1;
+	}
+	else
+	{
+	  printf 0;
+	}
+
+}

@@ -1,0 +1,13 @@
+main
+{
+    int suma;
+    array int[3] vector1;
+	
+	vector1[0]=7;
+	vector1[1]=8;
+	vector1[2]=15;
+	
+	suma = vector1[0]+vector1[1]+vector1[2];
+	
+	printf suma;
+}
