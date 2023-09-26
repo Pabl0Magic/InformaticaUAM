@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <h2>Questionnaire List</h2>
+  {% if questionnaire_list %}
+    {% for quest in questionnaire_list %}
+      <p>
+        <a href="{{quest.get_absolute_url }}">{{quest.title}}</a>
+          <button onclick="window.location.href='{% url 'questionnaire-confirm-remove' quest.pk %}'">Delete</button>
+        </p>
+    {% endfor %}
+  
+  {% else %}
+    <p>You still don't have any Questionnaires.</p>
+  {% endif %}
+  
+{% endblock %}

@@ -1,0 +1,105 @@
+from django.urls import path
+from .views import QuestionCreate, QuestionnaireDetail, QuestionnaireCreate
+from .views import QuestionDetail, QuestionnaireList, QuestionnaireRemove
+from .views import GameCountDown, GameCreate, GameDetail, AnswerCreate
+from .views import GameUpdateParticipant, AnswerRemove, AnswerUpdate, Home
+from .views import QuestionUpdate, QuestionRemove, QuestionnaireUpdate
+
+urlpatterns = [
+    path('', Home.as_view(), name='home_signed'),
+    path(
+        'questionnaire/<int:pk>/',
+        QuestionnaireDetail.as_view(),
+        name='questionnaire-detail'
+    ),
+    path(
+        'questionnairelist/',
+        QuestionnaireList.as_view(),
+        name='questionnaire-list'
+    ),
+    path(
+        'questionnaireremove/<int:pk>/',
+        QuestionnaireRemove.as_view(),
+        name='questionnaire-confirm-remove'
+    ),
+    path(
+        'questionnaireupdate/<int:pk>/',
+        QuestionnaireUpdate.as_view(),
+        name='questionnaire-update'
+    ),
+    path(
+        'questionnairecreate/',
+        QuestionnaireCreate.as_view(),
+        name='questionnaire-create'
+    ),
+    path(
+        'question/<int:pk>/',
+        QuestionDetail.as_view(),
+        name='question-detail'
+    ),
+    path(
+        'questionremove/<int:pk>/',
+        QuestionRemove.as_view(),
+        name='question-remove'
+    ),
+    path(
+        'questionupdate/<int:pk>/',
+        QuestionUpdate.as_view(),
+        name='question-update'
+    ),
+    path(
+        'questioncreate/<int:questionnaireid>',
+        QuestionCreate.as_view(),
+        name='question-create'
+    ),
+    path(
+        'answercreate/<int:questionid>',
+        AnswerCreate.as_view(),
+        name='answer-create'
+    ),
+    path(
+        'answerremove/<int:pk>',
+        AnswerRemove.as_view(),
+        name='answer-remove'
+    ),
+    path(
+        'answerupdate/<int:pk>',
+        AnswerUpdate.as_view(),
+        name='answer-update'
+    ),
+    path(
+        'gamecreate/<int:questionnaireid>',
+        GameCreate.as_view(),
+        name='game-create'
+    ),
+    path(
+        'game/<int:pk>/',
+        GameDetail.as_view(),
+        name='game-detail'
+    ),
+    path(
+        'gameUpdateParticipant/<int:publicid>/',
+        GameUpdateParticipant.as_view(),
+        name='game-update-participant'
+    ),
+    path(
+        'gamecountdownwaiting/<int:pk>/',
+        GameCountDown.as_view(),
+        name='game-countdown-waiting'
+    ),
+    path(
+        'gamecountdownquestion/<int:pk>',
+        GameCountDown.as_view(),
+        name='game-countdown-question'
+    ),
+    path(
+        'gamecountdownanswer/<int:pk>',
+        GameCountDown.as_view(),
+        name='game-countdown-answer'
+    ),
+    path(
+        'gamecountdownleaderboard/<int:pk>',
+        GameCountDown.as_view(),
+        name='game-countdown-leaderboard'
+    )
+]

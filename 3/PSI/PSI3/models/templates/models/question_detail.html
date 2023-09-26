@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+    <h2>Question Detail</h2>
+    <h3>
+        {{ question.question }}:
+        <a href="{% url 'question-update' question.pk %}">Edit question</a>
+    </h3>
+    {% if question.answer_set.all %}
+    <table>
+        <tr>
+          <th>Answer</th>
+          <th>correct</th>
+        </tr>
+        {% for answer in question.answer_set.all %}
+        <tr>
+            <td>
+              <p>{{ answer.answer }}</p>
+            </td>
+            <td>
+              <p>{{ answer.correct }}</p>
+            </td>
+            <td>
+              <button onclick="window.location.href='{% url 'answer-remove' answer.pk %}'">Remove</button>
+            </td>
+            <td>
+              <button onclick="window.location.href='{% url 'answer-update' answer.pk %}'">Edit</button>
+            </td>
+          </tr>
+    </table>
+        {% endfor %}
+    {% else %}
+        <p> No answers for this question</p>
+    {% endif %}
+    {% if question.noAnswer < 4 %}
+      <button onclick="window.location.href='{% url 'answer-create' question.id%}'">New answer</button>
+    {% endif %}
+
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Create or Update Question</h2>
+
+<form action="" method="post"> 
+    {% csrf_token %}
+    Question: <input type="text" name="question">
+    Answer time: <input type="number" name="answerTime">
+    {% if questionnaire %}
+        <a href="{% url 'questionnaire-detail' questionnaire.id %}">Cancel</a>
+    {% else %}
+        <a href="{% url 'question-detail' question.id %}">Cancel</a>
+    {% endif %}
+    <input type="submit" value="Confirm">
+</form>
+
+{% endblock %}

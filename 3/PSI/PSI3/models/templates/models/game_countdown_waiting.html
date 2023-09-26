@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>We will start in {{game.countdownTime}} seconds</h2>
+<button onclick="window.location.href='{% url 'game-countdown-question' game.id %}'">Next question</button>
+{% endblock %}

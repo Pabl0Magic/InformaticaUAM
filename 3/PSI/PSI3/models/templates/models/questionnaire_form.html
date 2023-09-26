@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Create or Update Questionnaire</h2>
+
+<form action="" method="post"> 
+    {% csrf_token %}
+    Title: <input type="text" name="title">
+    <a href="{% url 'home_signed' %}">Cancel</a>
+    <input type="submit" value="Confirm">
+</form>
+
+{% endblock %}

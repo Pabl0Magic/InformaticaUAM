@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Question:</h2> {{ question }}
+
+<h2>Answers:</h2>
+
+{% for answer in answers %}
+    <td>
+        <p>{{ answer.answer }}</p>
+    </td>
+{% endfor %}
+
+<button onclick="window.location.href='{% url 'game-countdown-answer' game.id %}'">Show Answer</button>
+{% endblock %}

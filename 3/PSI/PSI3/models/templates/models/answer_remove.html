@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Remove answer</h2>
+
+<p>Are you sure you want to remove the answer: {{ answer }}?</p>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <input type="submit" value="Yes" />
+</form>
+
+{% endblock %}

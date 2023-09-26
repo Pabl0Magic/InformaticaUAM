@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Correct Answer:</h2>
+{% for answer in answers %}
+    {% if answer.correct %}
+        {{ answer.answer }}
+    {% endif %}
+{% endfor %}
+
+<h2>Participant's Score</h2>
+{% for participant in participants %}
+    {{participant.alias}} ({{participant.points}})
+{% endfor %}
+<button onclick="window.location.href='{% url 'game-countdown-leaderboard' game.id %}'">Leaderboard</button>
+{% endblock %}

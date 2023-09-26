@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+
+PIN code: {{ game.publicId }}
+
+<button onclick="window.location.href='{% url 'game-countdown-waiting' game.id %}'">Get started</button>
+{% include "models/game_update_participants.html" %}
+
+{% endblock %}

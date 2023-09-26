@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>NEW GAME</h2>
+
+<form action="" method="post"> 
+    {% csrf_token %}
+    Countdown time: <input type="number" name="countdownTime">
+    {% if questionnaire %}
+        <a href="{% url 'questionnaire-detail' questionnaire.id %}">Cancel</a>
+    {% else %}
+        <a href="{% url 'questionnaire-list'  %}">Cancel</a>
+    {% endif %}
+    <input type="submit" value="Confirm">
+</form>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Leaderboard</h2>
+
+{% for participant in participants%}
+<p>{{participant.alias}} {{participant.points}}</p>
+{% endfor %}
+<button onclick="window.location.href='{% url 'game-countdown-question' game.id %}'">Next question</button>
+
+{% if game.questionNo < 2 %}
+<button onclick="window.location.href='{% url 'home_signed' %}'">End of Kahoot</button>
+{% endif %}
+
+{% endblock %}

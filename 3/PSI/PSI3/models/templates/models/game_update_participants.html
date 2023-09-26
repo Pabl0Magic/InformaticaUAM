@@ -1,0 +1,41 @@
+{% block content %}
+<h3>List of participants</h3>
+<u1 id="participants">
+    
+</u1>
+
+
+<script>
+    function updateParticipants() {
+        fetch("{% url 'game-update-participant' game.publicId %}", {
+            headers: {
+                "Accept": "application/json"
+            }
+        }).then(response => {
+            console.log("Response de update", response);
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.json();
+        })
+        .then(data => {
+            // update the HTML with the new data
+            var participantsDiv = document.getElementById("participants");
+            //participantsDiv.innerHTML = data;
+            participantsDiv.innerHTML = ''; // clear the previous content
+            data.forEach(function(participant) {
+                var li = document.createElement("li");
+                li.innerText = participant.alias;
+                participantsDiv.appendChild(li);
+            });
+        })
+        .catch(error => {
+            console.error("Error fetching data:", error);
+        });
+    }
+</script>
+<script>
+    setInterval(updateParticipants, 2000); // call updateParticipants() every 2 seconds
+</script>
+
+{% endblock %}

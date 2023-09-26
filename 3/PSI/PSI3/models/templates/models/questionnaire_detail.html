@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Questionnaire Detail</h2>
+  <h3>{{ questionnaire.title }}</h3>
+  <button onclick="window.location.href='{% url 'questionnaire-update' questionnaire.pk %}'">Edit title</button>
+  <button onclick="window.location.href='{% url 'game-create' questionnaire.pk %}'">Play Game</button>
+  <div>
+    {% if questionnaire.question_set.all %}
+      <table>
+        <tr>
+          <th>Question</th>
+          <th>No answers</th>
+        </tr>
+        {% for question in questionnaire.question_set.all %}
+        <tr>
+          <td>
+            <a href="{{ question.get_absolute_url}}">{{ question.question }}</a>
+          </td>
+          <td>
+            <p>{{ question.noAnswer }}</p>
+          </td>
+          <td>
+            <button onclick="window.location.href='{% url 'question-remove' question.pk %}'">Remove</button>
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+        
+    {% else %}
+        <p>There are no questions in the Questionnaire.</p>
+    {% endif %}
+    <div>
+      <button onclick="window.location.href='{% url 'question-create' questionnaire.pk %}'">Add New Question</button>
+      <button onclick="window.location.href='{% url 'questionnaire-list' %}'">Back to questionnaire list</button>
+    </div>
+  </div>
+
+{% endblock %}

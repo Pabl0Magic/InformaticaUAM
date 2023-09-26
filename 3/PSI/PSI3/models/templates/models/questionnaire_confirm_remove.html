@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Delete Questionnaire</h2>
+
+<p>Are you sure you want to delete the questionnaire: {{ questionnaire }}?</p>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <input type="submit" value="Yes, delete." />
+</form>
+
+{% endblock %}
