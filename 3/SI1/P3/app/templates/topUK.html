@@ -1,0 +1,39 @@
+<!DOCTYPE HTML> 
+<!--
+ Ejemplo de MongoDB
+-->
+<HTML> 
+  <HEAD> 
+	  <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8"> 
+	  <TITLE>Ejemplo de MongoDB</TITLE>
+  </HEAD> 
+
+  <BODY>
+ 
+    <h2> Ejemplo de MongoDB</h2>
+
+    <!-- TODO: tabla de películas Consulta 1 -->
+    <h3>Comedias entre 1990 y 1992</h3>
+    <ul>
+    {%for movie in movies[0]%}
+      <li>{{movie.title}}</li>
+    {%endfor%}
+    </ul>
+    
+    <!-- TODO: tabla de películas Consulta 2 -->
+    <h3>Películas de acción de los años 1995, 1997 y 1998, y que empiecen por la palabra "The"</h3>
+    <ul>
+    {%for movie in movies[1]%}
+    <li>{{movie.title}}</li> 
+    {%endfor%}
+    </ul>
+    <!-- TODO: tabla de películas Consulta 3 -->
+    <h3>Películas en las que aparecen Darren McAree y Katie Lockett</h3>
+    <ul>
+    {%for movie in movies[2]%}
+    <li>{{movie.title}}</li>
+    {%endfor%}
+    </ul>
+
+  </BODY>
+</HTML>
