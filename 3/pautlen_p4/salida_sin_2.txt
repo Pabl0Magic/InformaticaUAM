@@ -1,0 +1,41 @@
+;D:	main
+;D:	{
+;D:	int
+;R10:	<tipo> ::= int
+;R9:	<clase_escalar> ::= <tipo>
+;R5:	<clase> ::= <clase_escalar>
+;D:	x
+;R108:	<identificador> ::= TOK_IDENTIFICADOR
+;D:	;
+;R18:	<identificadores> ::= <identificador>
+;R4:	<declaracion> ::= <clase> <identificadores> ;
+;D:	int
+;R10:	<tipo> ::= int
+;R9:	<clase_escalar> ::= <tipo>
+;R5:	<clase> ::= <clase_escalar>
+;D:	y
+;R108:	<identificador> ::= TOK_IDENTIFICADOR
+;D:	;
+;R18:	<identificadores> ::= <identificador>
+;R4:	<declaracion> ::= <clase> <identificadores> ;
+;D:	int
+;R10:	<tipo> ::= int
+;R9:	<clase_escalar> ::= <tipo>
+;R5:	<clase> ::= <clase_escalar>
+;D:	z
+;R108:	<identificador> ::= TOK_IDENTIFICADOR
+;D:	;
+;R18:	<identificadores> ::= <identificador>
+;R4:	<declaracion> ::= <clase> <identificadores> ;
+;D:	z
+;R2:	<declaraciones> ::= <declaracion>
+;R3:	<declaraciones> ::= <declaracion> <declaraciones>
+;R3:	<declaraciones> ::= <declaracion> <declaraciones>
+;R21:	<funciones> ::=
+;R108:	<identificador> ::= TOK_IDENTIFICADOR
+;D:	=
+;D:	x
+;R108:	<identificador> ::= TOK_IDENTIFICADOR
+;D:	+
+;R80:	<exp> ::= <identificador>
+;D:	+

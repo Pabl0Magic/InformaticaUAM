@@ -1,0 +1,31 @@
+El fichero entrada1.txt no contiene ning�n error morfol�gico y el programa pruebaMorfo genera el fichero salida1.txt
+
+
+
+Los ficheros de prueba que contienen errores (entrada2.txt y entrada3.txt), adem�s de generar un fichero de salida,
+muestran un mensaje por stderr seg�n se indica continuaci�n:
+
+entrada2.txt
+============
+
+Genera el fichero de salida salida2.txt y muestra por stderr el siguiente mensaje:
+
+
+****Error en [lin 9, col 5]: identificador demasiado largo (x0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789)
+
+
+entrada3.txt
+============
+
+Genera el fichero de salida salida3.txt y muestra por stderr el siguiente mensaje:
+
+
+****Error en [lin 9, col 5]: simbolo no permitido (&)
+
+
+
+La aparici�n de cualquier s�mbolo no permitido funcionar�a de manera similar al comportamiento de la entrada3.
+
+
+
+
