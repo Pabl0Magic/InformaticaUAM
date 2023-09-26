@@ -1,0 +1,4 @@
+Pablo Almarza Marqués & Jorge González Gómez
+
+We took the second approach mentioned in the assignment PDF: We just set the memory bank to write in the falling_edge of the clock.
+We removed the next instructions in the BEQ, as mentioned in the email sent by the teacher.

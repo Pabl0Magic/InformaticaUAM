@@ -1,0 +1,8 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=61061652
+eax=69616D67 ebx=00000027 ecx=00000001 edx=00000003 esi=024BFCC8 edi=69616D67
+ebp=024BFA88 esp=024BFA7C program=C:\Users\Pablo\OneDrive\Documentos\arq0_p1\arqo\P2\working\ej1\sw\tools\objdump.exe
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
+024BFA88  61061652  (69616D67, 024BFCC8, 00000028, FFFFFFFE)
+End of stack trace
