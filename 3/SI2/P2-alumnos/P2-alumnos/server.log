@@ -1,0 +1,15 @@
+[2022-03-23T04:15:38.448-0700] [glassfish 4.1] [INFO] [] [javax.enterprise.web] [tid: _ThreadID=29 _ThreadName=http-listener-1(3)] [timeMillis: 1648034138448] [levelValue: 800] [[
+  WebModule[null] ServletContext.log():[INFO] Acceso correcto:/procesapago]]
+
+[2022-03-23T04:15:38.451-0700] [glassfish 4.1] [INFO] [] [javax.enterprise.web] [tid: _ThreadID=30 _ThreadName=http-listener-1(4)] [timeMillis: 1648034138451] [levelValue: 800] [[
+  WebModule[null] ServletContext.log():[INFO] Acceso correcto:/procesapago]]
+
+[2022-03-23T04:15:38.454-0700] [glassfish 4.1] [INFO] [] [javax.enterprise.web] [tid: _ThreadID=28 _ThreadName=http-listener-1(2)] [timeMillis: 1648034138454] [levelValue: 800] [[
+  WebModule[null] ServletContext.log():[INFO] Acceso correcto:/procesapago]]
+
+[2022-03-23T04:15:38.457-0700] [glassfish 4.1] [INFO] [] [javax.enterprise.web] [tid: _ThreadID=31 _ThreadName=http-listener-1(5)] [timeMillis: 1648034138457] [levelValue: 800] [[
+  WebModule[null] ServletContext.log():[INFO] Acceso correcto:/procesapago]]
+
+[2022-03-23T04:15:38.460-0700] [glassfish 4.1] [INFO] [] [javax.enterprise.web] [tid: _ThreadID=27 _ThreadName=http-listener-1(1)] [timeMillis: 1648034138460] [levelValue: 800] [[
+  WebModule[null] ServletContext.log():[INFO] Acceso correcto:/procesapago]]
+
